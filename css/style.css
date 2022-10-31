@@ -2,13 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    background-color: black;
 }
 
 /* HEADER */
 
 header{
-    background-color: black;
     height: 60px;
     margin-bottom: 20px;
     display: flex;
@@ -41,6 +40,7 @@ header{
     padding: 2%;
     border-radius: 7px 7px 7px 7px;
     border: none;
+    cursor: pointer;
 }
 
 i{
@@ -48,6 +48,7 @@ i{
     height: 15px;
     vertical-align: middle;
     color: white;
+    background-color: transparent;
 }
 
 /* MAIN */
@@ -75,8 +76,32 @@ main{
 .col-main{
     width: calc(100% / 7);
     height: calc(100% / 5);
-    border: 1px solid black; 
+    border: 3px solid black; 
     background-color: red; 
-    display: block;
+    position: relative;
 }
+
+.img{
+    width: 100%;
+    z-index: 0;
+}
+
+.label{
+    position: absolute;
+    color: white;
+    font-size: 13px;
+    bottom: 1px;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.604);
+    padding: 3%;
+    transition: 0s;
+    cursor: pointer;
+}
+
+
+.label:hover{
+    background-color: rgba(255, 255, 255, 0.492);
+}
+
+/* FOOTER */
 
